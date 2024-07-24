@@ -10934,6 +10934,11 @@ p.lead {
   font-size: 1.5rem;
   margin-right: 1.5rem;
 }
+
+.social-icon {
+  float: left;
+}
+
 .social-icons .social-icon:last-child {
   margin-right: 0;
 }
@@ -10942,9 +10947,8 @@ p.lead {
 } */
 
 .about_field {
-  float: right;
+  
   position: relative;
-  right: 15rem;
   top: 1px;
   font-family: Noto Sans KR, sans-serif;
   line-height: normal;
