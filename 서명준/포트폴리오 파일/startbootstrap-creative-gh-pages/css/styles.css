@@ -1990,7 +1990,18 @@ progress {
   font-size: 0.875em;
   color: #6c757d;
 }
+.korean {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
 
+}
+.korean2 {
+font-family: "Gowun Dodum", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
 .form-control {
   display: block;
   width: 100%;
@@ -10836,10 +10847,10 @@ body {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 6.5rem 0;
 }
 
-.text-white-75 {
+.p-75 {
   color: rgba(255, 255, 255, 0.75) !important;
 }
 
@@ -10857,7 +10868,7 @@ hr.divider {
   max-width: 3.25rem;
   margin: 1.5rem auto;
   background-color: #f4623a;
-  opacity: 1;
+  opacity: 10;
 }
 
 hr.divider-light {
