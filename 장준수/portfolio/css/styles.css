@@ -576,6 +576,14 @@ progress {
   margin-right: 0.5rem;
 }
 
+.skills_font {
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 3.5rem;
+  color: #424242;
+}
+
 .initialism {
   font-size: 0.875em;
   text-transform: uppercase;
@@ -11005,3 +11013,9 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+
+/*  */
+
+
+
