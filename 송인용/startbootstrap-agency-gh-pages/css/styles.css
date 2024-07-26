@@ -491,9 +491,16 @@ progress {
   font-size: 1.25rem;
   font-weight: 300;
 }
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
 .skills-img {
-  width: 2rem !important;
-  height: 2rem !important;
+  width: 100%;
+  max-width: 150px;
+  height: auto;
 }
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
