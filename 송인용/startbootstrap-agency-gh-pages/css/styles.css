@@ -612,7 +612,10 @@ progress {
   max-width: 100%;
   height: auto;
 }
-
+.img-portfolio {
+  width: 400px;
+  height: 300px;
+}
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
