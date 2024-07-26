@@ -486,12 +486,20 @@ progress {
 [hidden] {
   display: none !important;
 }
-
+.korean {
+  font-size: 1.37em;
+  font-weight: 400;
+  font-family: "Jua", sans-serif;
+}
+.english {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "Jua", sans-serif;
+}
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
 }
-
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;
@@ -10843,7 +10851,31 @@ html {
     line-height: 2.5rem;
   }
 }
-
+.divider-custom-primary {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divider-custom-primary .divider-custom-line:first-child {
+  margin-right: 1rem;
+}
+.divider-custom-primary .divider-custom-line:last-child {
+  margin-left: 1rem;
+}
+.divider-custom-primary .divider-custom-line {
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  background-color: white;
+  border-radius: 1rem;
+  border-color: white;
+}
+.divider-custom-primary .divider-custom-icon {
+  color: white;
+  font-size: 2rem;
+}
 .divider-custom {
   margin: 1.25rem 0 1.5rem;
   width: 100%;
