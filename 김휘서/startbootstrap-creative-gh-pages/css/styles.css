@@ -647,6 +647,11 @@ progress {
   max-width: 100%;
   height: auto;
 }
+.img-skills {
+  width: 150px !important;
+  height: 150px !important;
+  margin: 15px 45px 45px 15px;
+}
 
 .img-thumbnail {
   padding: 0.25rem;
