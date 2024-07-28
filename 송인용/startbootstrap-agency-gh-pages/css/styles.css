@@ -491,7 +491,17 @@ progress {
   font-size: 1.25rem;
   font-weight: 300;
 }
-
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+.skills-img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;
@@ -602,7 +612,10 @@ progress {
   max-width: 100%;
   height: auto;
 }
-
+.img-portfolio {
+  width: 400px;
+  height: 300px;
+}
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
