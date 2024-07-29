@@ -1,7 +1,7 @@
 /*!
-* Start Bootstrap - Freelancer v7.0.7 (https://startbootstrap.com/theme/freelancer)
+* Start Bootstrap - Creative v7.0.7 (https://startbootstrap.com/theme/creative)
 * Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
 */
 //
 // Scripts
@@ -50,23 +50,10 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
-    
+
+    // Activate SimpleLightbox plugin for portfolio items
+    new SimpleLightbox({
+        elements: '#portfolio a.portfolio-box'
+    });
 
 });
-
-let currentIndex = 0;
-
-function moveSlide(direction) {
-    const slides = document.querySelector('.slides');
-    const totalSlides = slides.children.length;
-    currentIndex += direction;
-
-    if (currentIndex < 0) {
-        currentIndex = totalSlides - 1;
-    } else if (currentIndex >= totalSlides) {
-        currentIndex = 0;
-    }
-
-    const slideWidth = slides.children[0].clientWidth;
-    slides.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
-}
