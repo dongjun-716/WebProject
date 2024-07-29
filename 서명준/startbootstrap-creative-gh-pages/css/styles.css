@@ -2002,12 +2002,6 @@ font-family: "Gowun Dodum", sans-serif;
   font-style: normal;
   font-size: 20px;
 }
-.korean3 {
-  font-family: "Gowun Dodum", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40px;
-  }
 .form-control {
   display: block;
   width: 100%;
@@ -8112,7 +8106,7 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #fff !important;
+  color: #6c757d !important;
 }
 
 .text-black-50 {
