@@ -502,10 +502,10 @@
                         />
                       </div>
                     </div>
-                    <button class="prev" onclick="moveSlide(-1)">
+                    <button class="prev" onclick="moveSlide('portfolioModal1', -1)">
                       &#10094;
                     </button>
-                    <button class="next" onclick="moveSlide(1)">
+                    <button class="next" onclick="moveSlide('portfolioModal1', 1)">
                       &#10095;
                     </button>
                   </div>
@@ -559,7 +559,7 @@
                   <h2
                     class="portfolio-modal-title text-secondary text-uppercase mb-0"
                   >
-                    Tasty Cake
+                    Pacman
                   </h2>
                   <!-- Icon Divider-->
                   <div class="divider-custom">
@@ -570,23 +570,53 @@
                     <div class="divider-custom-line"></div>
                   </div>
                   <!-- Portfolio Modal - Image-->
-                  <img
-                    class="img-fluid rounded mb-5"
-                    src="assets/img/portfolio/cake.png"
-                    alt="..."
-                  />
+                  <div class="slider">
+                    <div class="slides">
+                      <div class="slide">
+                        <img
+                          class="img-fluid rounded mb-3"
+                          src="assets/img/portfolio/pacman.jpeg"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="slide">
+                        <video class="img-fluid rounded mb-3 bg-black" autoplay loop>
+                          <source src="assets/img/portfolio/1.mp4" type="video/mp4">
+                        </video>
+                      </div>
+                      <div class="slide">
+                        <video class="img-fluid rounded mb-3 bg-black" autoplay loop>
+                          <source src="assets/img/portfolio/2.mp4" type="video/mp4">
+                        </video>
+                      </div>
+                      <div class="slide">
+                        <video class="img-fluid rounded mb-3 bg-black" autoplay loop>
+                          <source src="assets/img/portfolio/3.mp4" type="video/mp4">
+                        </video>
+                      </div>
+                      <div class="slide">
+                        <video class="img-fluid rounded mb-3 bg-black" autoplay loop>
+                          <source src="assets/img/portfolio/4.mp4" type="video/mp4">
+                        </video>
+                      </div>
+                    </div>
+                    <button class="prev" onclick="moveSlide('portfolioModal2', -1)">
+                      &#10094;
+                    </button>
+                    <button class="next" onclick="moveSlide('portfolioModal2', 1)">
+                      &#10095;
+                    </button>
+                  </div>
                   <!-- Portfolio Modal - Text-->
-                  <p class="mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Mollitia neque assumenda ipsam nihil, molestias magnam,
-                    recusandae quos quis inventore quisquam velit asperiores,
-                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
-                    Nam.
+                  <p class="mb-4 korean-Noto">
+                    Python의 Pygame을 이용하여 제작한 Pacman게임<br>
+                    d
                   </p>
-                  <button class="btn btn-primary" data-bs-dismiss="modal">
-                    <i class="fas fa-xmark fa-fw"></i>
-                    Close Window
-                  </button>
+                  <form action="https://github.com/dongjun-716/Pacman">
+                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                      Show Code
+                    </button>
+                  </form>
                 </div>
               </div>
             </div>
