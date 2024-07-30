@@ -8112,8 +8112,9 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #fff !important;
+  color: #000 !important;
 }
+
 
 .text-black-50 {
   --bs-text-opacity: 1;
@@ -11053,6 +11054,7 @@ header.masthead h1, header.masthead .h1 {
   transform-origin: left;
   border-radius: 10px;
   animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+
 }
 @keyframes animate {
   100% {
@@ -11067,6 +11069,7 @@ header.masthead h1, header.masthead .h1 {
   transform-origin: left;
   background: #6665ee;
   animation: animateFill 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  
 }
 @keyframes animateFill {
   100% {
@@ -11075,6 +11078,7 @@ header.masthead h1, header.masthead .h1 {
 }
 .bar .progress-line.html span {
   width: 70%;
+
 }
 .bar .progress-line.css span {
   width: 60%;
@@ -11087,4 +11091,23 @@ header.masthead h1, header.masthead .h1 {
 }
 .bar .progress-line.Pyhton span {
   width: 20%;
+}
+
+.bar1{
+  float:right;
+} 
+
+
+
+.icon1 {
+  color: #fff;
+}
+.icon1:hover {
+  color: #adb5bd;
+}
+
+.icon2 {
+  width: 1rem;
+  height: 1rem;
+  float: left;
 }
