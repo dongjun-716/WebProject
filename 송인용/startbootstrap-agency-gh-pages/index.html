@@ -96,8 +96,8 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0"></div>
-                </div>
             </div>
+        </div>
         </div>
     </section>
     <!-- About-->
@@ -153,11 +153,32 @@
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">skills</h2>
             </div>
-            <div class="skills-grid">
-                <img class="skills-img" src="/assets/img/html.jpg" alt="html">
-                <img class="skills-img" src="/assets/img/python.png" alt="html">
-                <img class="skills-img" src="/assets/img/c.png" alt="html">
-            </div>
+            <!-- HTML Chart -->
+            <figure class="chart" data-percent="75">
+                <figcaption>HTML</figcaption>
+                <img class="html" src="https://dl.dropboxusercontent.com/s/68gv23q4y5qyq52/html5.svg">
+                <svg class="skils-svg">
+                    <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
+                </svg>
+            </figure>
+
+            <!-- CSS Chart -->
+            <figure class="chart" data-percent="60">
+                <figcaption>CSS</figcaption>
+                <img class="css" src="https://dl.dropboxusercontent.com/s/gftbpqje9h2jvlv/css3.svg">
+                <svg width="200" height="200">
+                    <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
+                </svg>
+            </figure>
+
+            <!-- Javascript Chart -->
+            <figure class="chart" data-percent="10">
+                <figcaption>Javascript</figcaption>
+                <img class="javascript" src="https://dl.dropboxusercontent.com/s/jsp3rsberc4q650/javascript.svg">
+                <svg width="200" height="200">
+                    <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
+                </svg>
+            </figure>
         </div>
     </section>
     <!-- Footer-->
@@ -192,13 +213,12 @@
                         <div class="col-lg-8">
                             <div class="modal-body">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Project Name</h2>
+                                <h2 class="text-uppercase">파충류 사이트</h2>
                                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
-                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
-                                    nostrum, reiciendis facere nemo!</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/OIP.png" alt="..." />
+                                <p>이 사이트는 팀프로잭트로 조원들과 각각의 역할을 맡아 사이트를 구성했습니다.<br>우선 이 사이트는 파충류 판매 사이트입니다.
+                                    어떤걸 먹여야 하는지 적당한 온도, 습도<br>이런 세부적인 정보들도 알려주고 키우시는데 불편함 없이 유익한 정보를 드리고 싶어 만든 사이트입니다.
+                                </p>
                                 <ul class="list-inline">
                                     <li>
                                         <strong>Client:</strong>
@@ -222,45 +242,44 @@
         </div>
     </div>
     <!-- Portfolio item 2 modal popup-->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <!-- Project details-->
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
-                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
-                                    nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-inline">
-                                    <li>
-                                        <strong>Client:</strong>
-                                        Explore
-                                    </li>
-                                    <li>
-                                        <strong>Category:</strong>
-                                        Graphic Design
-                                    </li>
-                                </ul>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                    type="button">
-                                    <i class="fas fa-xmark me-1"></i>
-                                    Close Project
-                                </button>
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                            alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">학과 홈페이지</h2>
+                                    <p class="item-intro text-muted">팀 프로잭트</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/high.png" alt="..." />
+                                    <p>이 사이트는 스마트IT과에 대한 유익한 정보들을 신입생들에게 미리 알려주기 위해 만든 사이트입니다.<br>이 사이트에서는 IT과를 담당하시는 선생님들
+                                        정보 등을
+                                        담고 있고, 학과 행사, 사진 등을 담고 있는 사이트다.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Explore
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Graphic Design
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                        type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     <!-- Portfolio item 3 modal popup-->
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -272,13 +291,11 @@
                         <div class="col-lg-8">
                             <div class="modal-body">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
-                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
-                                    nostrum, reiciendis facere nemo!</p>
+                                <h2 class="text-uppercase">블랙 잭</h2>
+                                <p class="item-intro text-muted">팀 프로잭트</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/black.jpg" alt="..." />
+                                <p>이 게임은 파이선을 사용해 만든 게임입니다. 다른 사이트와는 다르게 특별한 룰을 더 추가 했습니다.<br>예를 들어 원래는 21점이랑 가까운 사람이
+                                    이기는 것인데 특별 모드라 해서 31점 까지 늘렸습니다.</p>
                                 <ul class="list-inline">
                                     <li>
                                         <strong>Client:</strong>
