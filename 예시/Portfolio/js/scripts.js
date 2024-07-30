@@ -54,19 +54,20 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-let currentIndex = 0;
+let currentIndexes = [0, 0, 0, 0]; 
 
-function moveSlide(direction) {
-    const slides = document.querySelector('.slides');
+function moveSlide(modalId, direction) {
+    const modalIndex = parseInt(modalId.replace('portfolioModal', '')) - 1;
+    const slides = document.querySelector(`#${modalId} .slides`);
     const totalSlides = slides.children.length;
-    currentIndex += direction;
 
-    if (currentIndex < 0) {
-        currentIndex = totalSlides - 1;
-    } else if (currentIndex >= totalSlides) {
-        currentIndex = 0;
+    currentIndexes[modalIndex] += direction;
+    if (currentIndexes[modalIndex] < 0) {
+        currentIndexes[modalIndex] = totalSlides - 1;
+    } else if (currentIndexes[modalIndex] >= totalSlides) {
+        currentIndexes[modalIndex] = 0;
     }
 
     const slideWidth = slides.children[0].clientWidth;
-    slides.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
+    slides.style.transform = `translateX(${-currentIndexes[modalIndex] * slideWidth}px)`;
 }
