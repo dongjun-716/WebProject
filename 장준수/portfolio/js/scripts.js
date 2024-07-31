@@ -88,11 +88,13 @@ document.addEventListener('DOMContentLoaded', function () {
       };
   
       $('a.control_prev').click(function () {
-          moveLeft();
+        event.preventDefault();  
+        moveLeft();
       });
   
       $('a.control_next').click(function () {
-          moveRight();
+        event.preventDefault(); 
+        moveRight();
       });
   
   });    
