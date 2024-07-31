@@ -50,52 +50,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  jQuery(document).ready(function ($) {
+  
+  let currentIndexes = [0, 0, 0, 0]; 
 
-    $('#checkbox').change(function(){
-      setInterval(function () {
-          moveRight();
-      }, 3000);
-    });
-    
-      var slideCount = $('#slider ul li').length;
-      var slideWidth = $('#slider ul li').width();
-      var slideHeight = $('#slider ul li').height();
-      var sliderUlWidth = slideCount * slideWidth;
-      
-      $('#slider').css({ width: slideWidth, height: slideHeight });
-      
-      $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
-      
-      $('#slider ul li:last-child').prependTo('#slider ul');
+  function moveSlide(modalId, direction) {
+      const modalIndex = parseInt(modalId.replace('porject', '')) - 1;
+      const slides = document.querySelector(`#${modalId} .slides`);
+      const totalSlides = slides.children.length;
   
-      function moveLeft() {
-          $('#slider ul').animate({
-              left: + slideWidth
-          }, 200, function () {
-              $('#slider ul li:last-child').prependTo('#slider ul');
-              $('#slider ul').css('left', '');
-          });
-      };
+      currentIndexes[modalIndex] += direction;
+      if (currentIndexes[modalIndex] < 0) {
+          currentIndexes[modalIndex] = totalSlides - 1;
+      } else if (currentIndexes[modalIndex] >= totalSlides) {
+          currentIndexes[modalIndex] = 0;
+      }
   
-      function moveRight() {
-          $('#slider ul').animate({
-              left: - slideWidth
-          }, 200, function () {
-              $('#slider ul li:first-child').appendTo('#slider ul');
-              $('#slider ul').css('left', '');
-          });
-      };
-  
-      $('a.control_prev').click(function () {
-        event.preventDefault();  
-        moveLeft();
-      });
-  
-      $('a.control_next').click(function () {
-        event.preventDefault(); 
-        moveRight();
-      });
-  
-  });    
-  
+      const slideWidth = slides.children[0].clientWidth;
+      slides.style.transform = `translateX(${-currentIndexes[modalIndex] * slideWidth}px)`;
+  }

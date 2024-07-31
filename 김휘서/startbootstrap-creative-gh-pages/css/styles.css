@@ -647,6 +647,10 @@ progress {
   max-width: 100%;
   height: auto;
 }
+.swd {
+  width: 500px;
+  height: 300px;
+}
 .img-skills {
   width: 150px !important;
   height: 150px !important;
@@ -688,6 +692,16 @@ progress {
   width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-modal {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.3);
+  padding-left: calc(var(--bs-gutter-x) * 0.3);
   margin-right: auto;
   margin-left: auto;
 }
@@ -750,15 +764,27 @@ progress {
   margin-top: var(--bs-gutter-y);
 }
 
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;  
+  overflow: hidden; 
+  background-color: white; 
+  padding: 10px; 
+}
+
 .col {
   flex: 1 0 0%;
 }
 .slider {
   position: relative;
-  width: 100%;
-  max-width: 600px;
+  width: 150%;
+  max-width: 800px;
   overflow: hidden;
-  margin-left: 60px;
+  margin-left: 10px;
+  height: 300%;
 
 }
 
@@ -782,6 +808,145 @@ progress {
   padding: 10px;
   cursor: pointer;
   border-radius: 50%;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px; 
+  overflow: hidden; 
+  background-color: white; 
+  padding: 10px; 
+}
+
+.image-container img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 10px;
+  padding-left: 12px;
+  border-radius: 30px;
+}
+
+.skill-bars {
+  padding: 25px 30px;
+  width: 600px;
+  background: #fff;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.skill-bars .bar {
+  margin: 20px 0;
+}
+.skill-bars .bar .info {
+  margin-bottom: 5px;
+}
+.skill-bars .bar .info span {
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100% {
+      opacity: 1;
+  }
+}
+.skill-bars .bar .progress-line {
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@keyframes animate {
+  100% {
+      transform: scaleX(1);
+  }
+}
+.bar .progress-line span {
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #6665ee;
+  animation: animateFill 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@keyframes animateFill {
+  100% {
+      transform: scaleX(1);
+  }
+}
+.bar .progress-line.html span {
+  width: 90%;
+}
+.bar .progress-line.css span {
+  width: 60%;
+}
+.bar .progress-line.javascript span {
+  width: 75%;
+}
+.image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 30px;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.image-container .text {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+}
+
+.divider-custom-primary {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divider-custom-primary .divider-custom-line:first-child {
+  margin-right: 1rem;
+}
+.divider-custom-primary .divider-custom-line:last-child {
+  margin-left: 1rem;
+}
+.divider-custom-primary .divider-custom-line {
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  background-color: white;
+  border-radius: 1rem;
+  border-color: white;
+}
+.divider-custom-primary .divider-custom-icon {
+  color: white;
+  font-size: 2rem;
 }
 
 .prev {
@@ -5475,7 +5640,7 @@ fieldset:disabled .btn {
 
 .modal {
   --bs-modal-zindex: 1055;
-  --bs-modal-width: 500px;
+  --bs-modal-width: 43%;
   --bs-modal-padding: 1rem;
   --bs-modal-margin: 0.5rem;
   --bs-modal-color: ;
@@ -5550,7 +5715,8 @@ fieldset:disabled .btn {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: auto;
+  height: auto;
   color: var(--bs-modal-color);
   pointer-events: auto;
   background-color: var(--bs-modal-bg);
@@ -5606,6 +5772,7 @@ fieldset:disabled .btn {
 .modal-body {
   position: relative;
   flex: 1 1 auto;
+  max-width: 100%;
   padding: var(--bs-modal-padding);
 }
 
