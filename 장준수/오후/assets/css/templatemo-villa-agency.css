@@ -464,8 +464,8 @@ Header Style
 }
 
 .header-area .main-nav .nav li:last-child a {
-  background-color: #1e1e1e;
-  color: #fff;
+  background-color: #fff;
+  color: #1e1e1e;
   font-size: 14px;
   font-weight: 400;
   text-transform: none;
