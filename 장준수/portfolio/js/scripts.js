@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let currentIndexes = [0, 0, 0, 0]; 
 
   function moveSlide(modalId, direction) {
-      const modalIndex = parseInt(modalId.replace('porject', '')) - 1;
+      const modalIndex = parseInt(modalId.replace('project', '')) - 1;
       const slides = document.querySelector(`#${modalId} .slides`);
       const totalSlides = slides.children.length;
   
