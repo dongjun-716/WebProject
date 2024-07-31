@@ -1,0 +1,19 @@
+/* 기존 스타일에 추가하여 작성 */
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo h1 {
+    margin-left: 10px; /* 로고와 텍스트 사이의 간격 조정 */
+    font-size: 24px; /* 텍스트 크기 조정 */
+    color: #000; /* 텍스트 색상 조정 */
+}
+
+.logo-img {
+    width: 50px; /* 로고 이미지의 너비 조정 */
+    height: auto; /* 자동으로 높이 조정 */
+}
+
+/* 추가적인 스타일이 필요하면 여기서 작성 */
