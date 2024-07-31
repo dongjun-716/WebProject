@@ -22,6 +22,7 @@
         <link rel="stylesheet" href="css/style_slide.css">
         <link rel="stylesheet" href="css/modal.css">
         <link rel="stylesheet" href="css/modal-slider.css">
+        <link rel="stylesheet" href="css/skill-bar.css">
         <script src="js/scripts.js"></script>
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     </head>
@@ -103,24 +104,58 @@
             <hr class="m-0" />
             <!-- Skills-->
             <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="skills_font">publishing</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fa-brands fa-html5 fa-2x"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt fa-2x"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square fa-2x"></i></li>
-                    </ul>
-                    <div class="skills_font">Front-end</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fa-brands fa-html5 fa-2x"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt fa-2x"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square fa-2x"></i></li>
-                    </ul>
-                    <div class="skills_font">Back-end</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fa-brands fa-python fa-2x"></i></li>
-                    </ul>
+                <div class="container">
+                    <div class="">
+                        <h2 class="section-heading text-uppercase ">Skills</h2>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="bar">
+                          <span class="bar1 ">70%</span>
+                            <div class="info">
+                                <span>HTML</span>
+                            </div>
+                            <div class="progress-line html">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                          <span class="bar1 ">60%</span>
+                            <div class="info">
+                                <span>CSS</span>
+                            </div>
+                            <div class="progress-line css">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                          <span class="bar1 ">20%</span>
+                            <div class="info">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="progress-line javascript">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                          <span class="bar1 ">50%</span>
+                            <div class="info">
+                                <span>C++</span>
+                            </div>
+                            <div class="progress-line C">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                          <span class="bar1 ">20%</span>
+                            <div class="info">
+                                <span>Pyhton</span>
+                            </div>
+                            <div class="progress-line Pyhton">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+        
                 </div>
             </section>
             <hr class="m-0" />
@@ -181,7 +216,7 @@
                                 <div class="blog-slider__content">
                                     <span class="blog-slider__code">2024.07 (1인 개인 프로젝트)</span>
                                     <div class="blog-slider__title">포트폴리오 웹사이트</div>
-                                    <div class="blog-slider__text">여태까지 한 포트폴리오를 소개하는 사이트</div>
+                                    <div class="blog-slider__text">포트폴리오 용도로 제작한 웹사이트입니다. 지금 보고 있는 바로 이 웹사이트에 해당합니다.</div>
                                     <a href="#project5" class="blog-slider__button">READ MORE</a>
                                 </div>
                             </div>
@@ -228,8 +263,8 @@
 
 
 
-                
-                <div class="slider">
+                <div class="">
+                <div class="slider" id="slider">
                     <div class="slides">
                       <div class="slide">
                         <img
@@ -267,11 +302,12 @@
                       &#10095;
                     </button>
                   </div>
-
+                </div>
 
 
 
                 <div class="project-text"><p>카메라로 출석한 인원을 자동으로 인식한 후, Dashboard로 데이터를 표출하는 서비스</p></div>
+                <br>
                 <a href="https://github.com/jeonghun-seo/k-tech" class="icon-modal"><i class="fa-brands fa-github" style="width: 40px; height: 40px;"></i></a>
             </div>
         </div>
@@ -284,7 +320,51 @@
                     <div class="project-subtitle">2023.03 ~ 2023.12 (5인 팀 프로젝트)</div>
                 </div>
                 <br>
-                <div class="project-img"><img class="img-size" src="assets/img/image2.png" width="600" height="400" alt=""></div>
+                
+
+                <div class="">
+                    <div class="slider" id="slider">
+                        <div class="slides">
+                          <div class="slide">
+                            <img
+                              class="img-fluid rounded mb-3"
+                              src="assets/img/image1-2.png"
+                              alt="..."
+                            />
+                          </div>
+                          <div class="slide">
+                            <img
+                              class="img-fluid rounded mb-3"
+                              src="assets/img/image1-3.png"
+                              alt="..."
+                            />
+                          </div>
+                          <div class="slide">
+                            <img
+                              class="img-fluid rounded mb-3"
+                              src="assets/img/image1-4.png"
+                              alt="..."
+                            />
+                          </div>
+                          <div class="slide">
+                            <img
+                              class="img-fluid rounded mb-3"
+                              src="assets/img/image1-5.png"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <button class="prev" onclick="moveSlide('project2', -1)">
+                          &#10094;
+                        </button>
+                        <button class="next" onclick="moveSlide('project2', 1)">
+                          &#10095;
+                        </button>
+                      </div>
+                    </div>
+
+
+
                 <div class="project-text"><p>스마트IT과를 소개하는 홈페이지</p></div>
                 <a href="#" class="icon-modal"><i class="fa-brands fa-github" style="width: 40px; height: 40px;"></i></a>
             </div>
@@ -298,7 +378,51 @@
                     <div class="project-subtitle">2023.08 (3인 팀 프로젝트)</div>
                 </div>
                 <br>
-                <div class="project-img"><img class="img-size" src="assets/img/image3.png" width="600" height="400" alt=""></div>
+
+
+                <div class="">
+                    <div class="slider" id="slider">
+                        <div class="slides">
+                          <div class="slide">
+                            <img
+                              class="img-fluid rounded mb-3"
+                              src="assets/img/image1-2.png"
+                              alt="..."
+                            />
+                          </div>
+                          <div class="slide">
+                            <img
+                              class="img-fluid rounded mb-3"
+                              src="assets/img/image1-3.png"
+                              alt="..."
+                            />
+                          </div>
+                          <div class="slide">
+                            <img
+                              class="img-fluid rounded mb-3"
+                              src="assets/img/image1-4.png"
+                              alt="..."
+                            />
+                          </div>
+                          <div class="slide">
+                            <img
+                              class="img-fluid rounded mb-3"
+                              src="assets/img/image1-5.png"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <button class="prev" onclick="moveSlide('project3', -1)">
+                          &#10094;
+                        </button>
+                        <button class="next" onclick="moveSlide('project3', 1)">
+                          &#10095;
+                        </button>
+                      </div>
+                    </div>
+
+
+
                 <div class="project-text"><p>프로젝트 내용</p></div>
                 <a href="#" class="icon-modal"><i class="fa-brands fa-github" style="width: 40px; height: 40px;"></i></a>
             </div>
@@ -312,18 +436,17 @@
                     <div class="project-subtitle">2022.00 ~ 2022.00 (6인 팀 프로젝트)</div>
                 </div>
                 <br>
-                <div id="slider">
-                    <a href="#" class="control_next"> >> </a>
-                    <a href="#" class="control_prev"> << </a>
-                    <ul>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li><img src="" width="500" height="300" alt=""></li>
-                    </ul>  
-                </div>
-                <div class="project-text"><p>프로젝트 내용</p></div>
-                <a href="https://youtu.be/CSUitmGu13M?si=DavXk6NnFVyxTNDc" class="icon-modal"><i class="fa-brands fa-youtube" style="width: 50px; height: 50px;"></i></a>
+                <p class="middle">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CSUitmGu13M?si=LsNHldXOQkUmL7Iu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </p>
+                <div class="project-text"><p>충청북도교육도서관에서 주관하는 제3회 북트레일러 공모전 최우수 작품입니다.
+                    <br>그림과 아이디어부분으로 참여했으며
+                    <br>팀원들과 함께 토론하며 프로젝드를 진행하였습니다
+                    <br>
+                    <div class="">
+                        사용 기술 : Adobe Premiere Pro, CLIP STUDIO PAINT
+                    </div>
+                </p></div>
             </div>
         </div>
         <!-- Project Modal5-->>
@@ -335,9 +458,66 @@
                     <div class="project-subtitle">2024.07 (1인 개인 프로젝트)</div>
                 </div>
                 <br>
-                <div class="project-img"><img class="img-size" src="assets/img/image5-2.png" width="800" height="400" alt="" style="box-shadow: .25px .5px;"></div>
-                <div class="project-text"><p>여태까지 한 포트폴리오를 소개하는 사이트</p></div>
-                <a href="#about" class="icon-modal"><i class="fa-solid fa-house" style="width: 40px; height: 40px;"></i></a>
+
+
+                <div class="">
+                    <div class="slider" id="slider">
+                        <div class="slides">
+                          <div class="slide">
+                            <img
+                              class="img-fluid rounded mb-3"
+                              src="assets/img/image1-2.png"
+                              alt="..."
+                            />
+                          </div>
+                          <div class="slide">
+                            <img
+                              class="img-fluid rounded mb-3"
+                              src="assets/img/image1-3.png"
+                              alt="..."
+                            />
+                          </div>
+                          <div class="slide">
+                            <img
+                              class="img-fluid rounded mb-3"
+                              src="assets/img/image1-4.png"
+                              alt="..."
+                            />
+                          </div>
+                          <div class="slide">
+                            <img
+                              class="img-fluid rounded mb-3"
+                              src="assets/img/image1-5.png"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <button class="prev" onclick="moveSlide('project5', -1)">
+                          &#10094;
+                        </button>
+                        <button class="next" onclick="moveSlide('project5', 1)">
+                          &#10095;
+                        </button>
+                      </div>
+                    </div>
+
+
+
+                    <div class="project-text"><p>프로젝트 내용
+                        <br>
+                        <div class="">
+                            사용 기술 : HTML, CSS, JAVASCRIPT
+                        </div>
+                        </p></div>
+                        <br>
+                    <div class="icon-center">
+                    <div style="width:50px; height:150px; float:left; margin-right:10px;">
+                        <a href="#" class="icon-modal"><i class="fa-brands fa-github" style="width: 40px; height: 40px;"></i></a>
+                    </div>
+                    <div style="width:50px; height:170px; float:left;">
+                        <a href="#about" class="icon-modal"><i class="fa-solid fa-house" style="width: 40px; height: 40px;"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
