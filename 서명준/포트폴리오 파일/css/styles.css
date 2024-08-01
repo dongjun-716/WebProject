@@ -11111,6 +11111,13 @@ header.masthead h1, header.masthead .h1 {
 .bar .progress-line.Unity span {
   width: 15%;
 }
+.bar .progress-line.line span {
+  width: 100%;
+}
+.bar .progress-line.j span {
+  width: 100%;
+}
+
 
 .bar1{
   float:right;
