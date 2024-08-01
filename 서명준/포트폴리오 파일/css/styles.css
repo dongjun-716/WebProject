@@ -2996,6 +2996,22 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #212529;
   --bs-btn-disabled-border-color: #212529;
 }
+.btn-rad {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #ff0000;
+  --bs-btn-border-color: #ff0000;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #b90404;
+  --bs-btn-hover-border-color: #b90404;
+  --bs-btn-focus-shadow-rgb: 66, 70, 73;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #b90404;
+  --bs-btn-active-border-color: #b90404;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #ff0000;
+  --bs-btn-disabled-border-color: #ff0000;
+}
 
 .btn-outline-primary {
   --bs-btn-color: #f4623a;
@@ -11089,9 +11105,19 @@ header.masthead h1, header.masthead .h1 {
 .bar .progress-line.C span {
   width: 50%;
 }
-.bar .progress-line.Pyhton span {
+.bar .progress-line.Python span {
   width: 20%;
 }
+.bar .progress-line.Unity span {
+  width: 15%;
+}
+.bar .progress-line.line span {
+  width: 100%;
+}
+.bar .progress-line.j span {
+  width: 100%;
+}
+
 
 .bar1{
   float:right;
@@ -11102,6 +11128,8 @@ header.masthead h1, header.masthead .h1 {
 .icon1 {
   color: #fff;
   margin-left: 2rem;
+  position: relative;
+  right: 25px;
 }
 .icon1:hover {
   color: #adb5bd;
@@ -11109,8 +11137,10 @@ header.masthead h1, header.masthead .h1 {
 .icon2{
   color: #fff;
   margin-left: 2rem;
-  position: absolute;
   margin-top: 1.1rem  ;
+  position: relative;
+  right: 25px;
+  top: -10px;
 }
 .icon2:hover {
   color: #adb5bd;
