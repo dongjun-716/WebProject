@@ -277,17 +277,57 @@
         <div class="text-center">
           <h2 class="mt-0">SKILLS</h2>
           <hr class="divider" />
-          <div>
-            <img class="img-skills" src="assets/사진/cccccccccccc.svg" alt="..." />
-            <img class="img-skills" src="assets/사진/html.jpg" alt="..." />
-            <img class="img-skills" src="assets/사진/gkgkgkghk.jpg" alt="..." />
-            <img class="img-swith" width="250px" height="140px" src="assets/사진/java.jpg" alt="..." />
-            <img class="img-swith" width="250px" height="140px" src="assets/사진/python.jpg" alt="..." />
-            <img class="img-swith" width="330px" height="180px" src="assets/사진/C++.JPG" alt="..." />
-            <img class="img-swith" width="250px" height="180px" src="assets/사진/fusion360.jpg" alt="..." />
+          <div class="divider-custom-primary">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+          </div>
+          <div class="grid-container">
+            <div class="grid-item">
+              <h2 class="text-black mb-0">Frontend</h2>
+              <div class="image-container">
+                <img src="assets/사진/cccccccccccc.svg" alt="C" />
+                <div class="overlay"><div class="text">80%</div></div>
+              </div>
+              <div class="image-container">
+                <img src="assets/사진/python.jpg" alt="python" />
+                <div class="overlay"><div class="text">40%</div></div>
+              </div>
+              <div class="image-container">
+                <img src="assets/사진/C++.JPG" alt="C++" />
+                <div class="overlay"><div class="text">40%</div></div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <h2 class="text-black mb-0">Backend</h2>
+              <div class="image-container">
+                <img src="assets/사진/html.jpg" alt="html" />
+                <div class="overlay"><div class="text">80%</div></div>
+              </div>
+              <div class="image-container">
+                <img src="assets/사진/java.jpg" alt="java" />
+                <div class="overlay"><div class="text">60%</div></div>
+              </div>
+              <div class="image-container">
+                <img src="assets/사진/fusion360.jpg" alt="fusion360" />
+                <div class="overlay"><div class="text">40%</div></div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <h2 class="text-black mb-0">Other</h2>
+              <div class="image-container">
+                <img src="assets/사진/GitHub-logo.png" alt="Github" />
+                <div class="overlay"><div class="text">70%</div></div>
+              </div>
+              <div class="image-container">
+                <img src="assets/사진/gkgkgkghk.jpg" alt="visual studio" />
+                <div class="overlay"><div class="text">90%</div></div>
+              </div>
+            </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
       </form>
     </div>
     </div>
@@ -538,7 +578,34 @@
                 <!-- Project details-->
                 <h2 class="text-uppercase mb-2 mt-3" style="text-align: center;">포트폴리오 작품</h2>
                 <p class="item-intro text-muted mb-5" style="text-align: center;">나를 소개하는 포트폴리오 사이트를 만들었다.</p>
-                <img class="img-fluid d-block mx-auto mb-3" src="assets/사진/vhvh.jpg" alt="..." />
+              <!-- Project details-->
+              <div class="col-lg-8">
+                <div class="slider">
+                  <div class="slides">
+                    <div class="slide">
+                      <img class="img-fluid rounded mb-3" src="assets/사진/vhvh.jpg" alt="..." />
+                    </div>
+                    <div class="slide">
+                      <img class="img-fluid rounded mb-3" src="assets/사진/1.png" />
+                    </div>
+                    <div class="slide">
+                      <img class="img-fluid rounded mb-3" src="assets/사진/2.png" alt="..." />
+                    </div>
+                    <div class="slide">
+                      <img class="img-fluid rounded mb-3" src="assets/사진/3.png" alt="..." />
+                    </div>
+                    <div class="slide">
+                      <img class="img-fluid rounded mb-3" src="assets/사진/4.png" alt="..." />
+                    </div>
+                  </div>
+                  <button class="prev" onclick="moveSlide('portfolioModal6', -1)">
+                    &#10094;
+                  </button>
+                  <button class="next" onclick="moveSlide('portfolioModal6', 1)">
+                    &#10095;
+                  </button>
+                </div>
+              </div>
                 <p>이 사이트는 나를 소개하는 포트폴리오 작품이다. 우선 이 사이트는 나 자신의 자격증, 대회 등 다양한 나를 소개하는 것을 추가하였다. 
                   visual studio앱을 사용하여 다른 사람이 만든 포트폴리오 작품을 참고하면서 코드를 추가하고, 수정하면서 나만의 포트폴리오 작품을 만들었다.
                 </p>
@@ -552,10 +619,11 @@
                     2024년
                   </li>
                 </ul>
-                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                  <i class="fas fa-xmark me-1"></i>
-                  Close Project
-                </button>
+                <form action="https://github.com/rlagnltj/portfolio">
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    Show Code
+                  </button>
+                </form>
               </div>
             </div>
           </div>
