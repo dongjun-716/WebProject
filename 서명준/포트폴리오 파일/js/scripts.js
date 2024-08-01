@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-let currentIndexes = [0, 0, 0, 0]; 
+let currentIndexes = [0, 0, 0, 0, 0, 0]; 
 
 function moveSlide(modalId, direction) {
     const modalIndex = parseInt(modalId.replace('portfolioModal', '')) - 1;

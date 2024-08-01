@@ -17,3 +17,8 @@
 }
 
 /* 추가적인 스타일이 필요하면 여기서 작성 */
+
+#Introduce {
+    position: sticky;
+    
+}

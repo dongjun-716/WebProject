@@ -497,14 +497,14 @@ Header Style
   color: #f35525;
 }
 
-.header-area .main-nav .nav li a.active {
+/* .header-area .main-nav .nav li a.active {
   color: #f35525;
-}
+} */
 
 
-.background-header .main-nav .nav li a.active {
+/* .background-header .main-nav .nav li a.active {
   color: #f35525;
-}
+} */
 
 .header-area .main-nav .menu-trigger {
   cursor: pointer;
