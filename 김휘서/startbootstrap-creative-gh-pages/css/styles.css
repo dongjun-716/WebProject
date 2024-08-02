@@ -5774,6 +5774,8 @@ fieldset:disabled .btn {
   flex: 1 1 auto;
   max-width: 100%;
   padding: var(--bs-modal-padding);
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .modal-footer {
@@ -8252,6 +8254,14 @@ fieldset:disabled .btn {
 
 .ms-5 {
   margin-left: 3rem !important;
+}
+
+.ms-6 {
+  margin-left: 142px !important;
+}
+
+.ms-7 {
+  margin-left: 180px !important;
 }
 
 .ms-auto {
@@ -11631,4 +11641,8 @@ header.masthead .h1 {
 #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption,
 #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+}
+
+.btn {
+text-align: center;
 }
